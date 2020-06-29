@@ -7,7 +7,7 @@ setup(
     packages=find_packages(exclude=['tests*']),
     license='GPLv3',
     description='CDN Common (shared) package',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     install_requires=['aiohttp', 'asyncio-nats-client[nkeys]', 'marshmallow', 'protobuf'],
     # url='',
     author='Eduard Kalashnikov',
