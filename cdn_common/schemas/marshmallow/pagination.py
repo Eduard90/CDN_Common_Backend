@@ -1,6 +1,6 @@
 from marshmallow import Schema, fields, EXCLUDE
 
-from common.schemas.marshmallow.validators import PageValidator, PageSizeValidator
+from cdn_common.schemas.marshmallow.validators import PageValidator, PageSizeValidator
 
 
 class SmallPaginationSchema(Schema):
