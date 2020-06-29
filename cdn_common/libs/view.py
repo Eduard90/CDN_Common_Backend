@@ -1,7 +1,7 @@
 import functools
 
-from common.libs.response import HTTPBadRequest
-from common.schemas.marshmallow.pagination import SmallPaginationSchema, LargePaginationSchema
+from cdn_common.libs.response import HTTPBadRequest
+from cdn_common.schemas.marshmallow.pagination import SmallPaginationSchema, LargePaginationSchema
 
 
 class Paginator:
