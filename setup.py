@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cdn_common',
-    version='0.1',
+    version='0.2.0',
     packages=find_packages(exclude=['tests*']),
     license='GPLv3',
     description='CDN Common (shared) package',
