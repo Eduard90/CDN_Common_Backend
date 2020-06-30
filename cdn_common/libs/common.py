@@ -1,4 +1,24 @@
+import os
+
 from yarl import URL
+
+
+def getenv_boolean(name: str, default: bool = False) -> bool:
+    value = os.getenv(name, default)
+    if isinstance(value, str):
+        return value.lower() == 'true'
+    return value
+
+
+def getenv_string(name: str, default: str = '') -> str:
+    value = os.getenv(name)
+    if value is None or value == '':
+        return default
+    return value
+
+
+def getenv_integer(name: str, default: int = 0) -> int:
+    return int(getenv_string(name, str(default)))
 
 
 def secure_connect_string(connect_string: str) -> str:
@@ -14,3 +34,5 @@ def hide_password(password: str) -> str:
         return '*' * 3
 
     return f'{password[0]}***{password[-1]}'
+
+
